@@ -8,4 +8,4 @@ async def sema():
     nachalo.perf_counter()
     tasks = [task(i) for i in range(1, 101)]
     await asyncio.gather(*tasks)
-    print(f"\nОбщее время выполнения: {time.perf_counter() - nachalo:.2f} сек.")
+    print(f"\nОбщее время : {time.perf_counter() - nachalo:.2f} сек.")
